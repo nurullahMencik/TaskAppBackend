@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware'ler
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://task-app-frontend-xi.vercel.app'],
+  origin: ['http://localhost:3000', 'https://task-app-frontendd.vercel.app'],
   credentials: true
 }));
 
