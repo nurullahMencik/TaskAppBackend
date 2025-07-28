@@ -17,7 +17,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware'ler
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'http://konyaereglisatis.com','https://konyaereglisatis.com'],
+  credentials: true
+}));
 
 // Veritabanı Bağlantısı
 
